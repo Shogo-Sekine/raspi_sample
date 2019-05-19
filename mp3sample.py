@@ -3,6 +3,9 @@ import RPi.GPIO as GPIO
 from time import sleep
 import subprocess
 
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
 def my_callback(channel):
     global isPlaying
     global process
